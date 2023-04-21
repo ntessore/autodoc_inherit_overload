@@ -1,0 +1,22 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "sphinxcontrib.autodoc_inherit_overload"
+authors = [{name = "Nicolas Tessore", email = "n.tessore@ucl.ac.uk"}]
+readme = "README.md"
+license = {file = "LICENSE.txt"}
+keywords = ["sphinx", "sphinxcontrib", "autodoc", "typing", "overload"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+]
+requires-python = ">=3.11"
+dynamic = ["version", "description"]
+
+[project.urls]
+Homepage = "https://github.com/ntessore/autodoc_inherit_overload"
+Issues = "https://github.com/ntessore/autodoc_inherit_overload/issues"
+
+[tool.flit.sdist]
+exclude = [".*"]
